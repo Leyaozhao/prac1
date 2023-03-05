@@ -10,5 +10,5 @@ int main(){
 
 
     Referee r;
-    std::cout << r.refGame(h,c)->getName() << std::endl;
+    std::cout << r.refGame(h,c)->getName() <<" win"<< std::endl;
 }
