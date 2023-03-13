@@ -8,5 +8,5 @@ void Zombie::compare(Move *move)
 {
     if (move->getName() == "Monkey" ||
     move->getName() == "Pirate")
-        proportion = 1;
+        flag = 1;
 }

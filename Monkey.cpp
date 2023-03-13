@@ -8,5 +8,5 @@ void Monkey::compare(Move *move)
 {
     if (move->getName() == "Ninja" ||
     move->getName() == "Robot")
-        proportion = 1;
+        flag = 1;
 }

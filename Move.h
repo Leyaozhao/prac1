@@ -18,7 +18,6 @@ public:
     string getName();
     int getFlag();
     virtual void compare(Move *move) = 0;
-    // virtual string makeSound() = 0;
     int flag;
 };
 

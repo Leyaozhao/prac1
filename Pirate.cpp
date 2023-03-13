@@ -8,5 +8,5 @@ void Pirate::compare(Move *move)
 {
     if (move->getName() == "Robot" ||
     move->getName() == "Monkey")
-        proportion = 1;
+        flag = 1;
 }
