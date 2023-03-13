@@ -22,5 +22,10 @@ int main()
     Computer *c = new Computer();
     Referee *r = new Referee();
     cout<<"enter: ";
-    r->refGame(h, c);
+    Player *winner = r->refGame(h, c);
+    if (winner != nullptr){
+        cout << winner->getName() << endl;
+    }
+    else cout<<"Tie"<<endl;
+    return 0;
 }
