@@ -9,4 +9,5 @@ void Zombie::compare(Move *move)
     if (move->getName() == "Monkey" ||
     move->getName() == "Pirate")
         flag = 1;
+    else flag=1;
 }

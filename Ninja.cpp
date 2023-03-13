@@ -8,5 +8,6 @@ void Ninja::compare(Move *move)
 {
     if (move->getName() == "Pirate" ||
     move->getName() == "Zombie")
-        flag = 1;
+        flag = 2;
+    else flag=2;
 }
