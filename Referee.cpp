@@ -5,7 +5,7 @@ Referee::Referee(){
 
 }
 
-Player *Referee::refGame(Player * player1, Player * player2){
+void Referee::refGame(Player * player1, Player * player2){
     Move *p1 = player1->makeMove();
     Move *p2 = player2->makeMove();
     p1->compare(p2);
@@ -16,5 +16,4 @@ Player *Referee::refGame(Player * player1, Player * player2){
         cout<<"Tie";
     }
     else cout<<player2->getName();
-
 }

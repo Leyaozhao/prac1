@@ -8,8 +8,8 @@ using namespace std;
 
 class Player
 {
+private:
     string name;
-    bool replace(std::string &str, const std::string &from, const std::string &to);
 
 public:
     Player();
@@ -19,7 +19,6 @@ public:
     void SetName(string name);
     Move *returnMove(string moveName);
 
-private:
 };
 
 #endif

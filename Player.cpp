@@ -33,15 +33,6 @@ void Player::SetName(string name)
     this->name = name;
 }
 
-bool Player::replace(std::string &str, const std::string &from, const std::string &to)
-{
-    size_t start_pos = str.find(from);
-    if (start_pos == std::string::npos)
-        return false;
-    str.replace(start_pos, from.length(), to);
-    return true;
-}
-
 Move *Player::returnMove(string moveName)
 {
     if (moveName == "Rock")
@@ -60,14 +51,5 @@ Move *Player::returnMove(string moveName)
         return new Robot();
     else if (moveName == "Zombie")
         return new Zombie();
-
-    // replace(moveName, " ", "");
-    // if (moveName == "")
-    // {
-    //     string m;
-    //     cin >> m;
-    //     return returnMove(m);
-    // }
-    // cout << "Invalid moveName {" << moveName << "}" << endl;
     return nullptr;
 }
