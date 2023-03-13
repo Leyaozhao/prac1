@@ -6,8 +6,7 @@ Zombie::Zombie() : Move("Zombie")
 
 void Zombie::compare(Move *move)
 {
-    if (move->getName() == "Monkey" ||
-    move->getName() == "Pirate")
+    if (move->getName() == "Monkey" ||move->getName() == "Pirate")
         flag = 1;
 
 }

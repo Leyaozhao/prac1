@@ -4,13 +4,13 @@
 #include "Player.h"
 #include <iostream>
 #include <string>
-using namespace std;
+
 
 class Computer : public Player
 {
 public:
     Computer();
-    Computer(string name);
+    Computer(std::string name);
     Move *makeMove();
 
 private:

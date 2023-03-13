@@ -2,23 +2,20 @@
 #define MOVE_H
 
 #include <iostream>
-#include <string>
-
-
-
-using namespace std;
 
 class Move
 {
-    string name;
+private:
+    std::string name;
 protected:
+    int flag;
 public:
     Move();
-    Move(string name);
-    string getName();
+    Move(std::string name);
+    std::string getName();
     int getFlag();
     virtual void compare(Move *move) = 0;
-    int flag;
+
 };
 
 #endif

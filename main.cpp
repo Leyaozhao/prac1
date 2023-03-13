@@ -1,12 +1,3 @@
-#include "Rock.h"
-#include "Paper.h"
-#include "Scissors.h"
-#include "Monkey.h"
-#include "Pirate.h"
-#include "Ninja.h"
-#include "Robot.h"
-#include "Zombie.h"
-
 #include "Referee.h"
 #include "Human.h"
 #include "Computer.h"
@@ -14,7 +5,6 @@
 
 #include <iostream>
 #include <string>
-using namespace std;
 
 int main()
 {
@@ -24,8 +14,8 @@ int main()
     cout<<"enter: ";
     Player *winner = r->refGame(h, c);
     if (winner != nullptr){
-        cout << winner->getName() << endl;
+        std::cout << winner->getName() << endl;
     }
-    else cout<<"Tie"<<endl;
+    else std::cout<<"Tie"<<endl;
     return 0;
 }

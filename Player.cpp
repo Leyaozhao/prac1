@@ -18,9 +18,8 @@ Player::Player()
     name = "";
 }
 
-Player::Player(string name)
-{
-    this->name = name;
+Player::Player(string name):name(name){
+    
 }
 
 string Player::getName()
