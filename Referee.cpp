@@ -1,14 +1,17 @@
 #include"Referee.h"
+#include<iostream>
 
 Referee::Referee(){
 
 }
 
-Player * Referee::refGame(Player * player1, Player * player2){
-    char p1 = player1->makeMove();
-    char p2 = player2->makeMove();
-    if(p1=='R')return nullptr;
-    else if(p1=='S')return player2;
-    else if(p1=='P')return player1;
-    
+Player *Referee::refGame(Player * player1, Player * player2){
+    Move *p1 = player1->makeMove();
+    Move *p2 = player2->makeMove();
+    p1->compare(p2);
+    if(p1->getProportion()==1){
+        return player1;
+    }
+    else return player2;
+
 }
